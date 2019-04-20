@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+       
+            .title-box{
+                font-family: relative;
+                position: absolute;
+                margin: auto;
+                top: 10%;
+                left: 50%;
+                font-size: 150%;
+                font-weight: bold;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                transform: translate(-50%, -50%);
+            
+            }    
+        
+            .text-box {
+                font-family: relative;
+                position: absolute;
+                margin: auto;
+                top: 50%;
+                left: 50%;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <style>
+            body {
+                background-image: url(<%= asset_path "mountain.png" %>);
+                background-repeat: no-repeat;
+                background-size: auto;         
+            }
+        </style>
+           <div class = "title-box">
+                <p>Black Market Pizza</p>
+           </div>
+        <div class= "text-box">
+            
+          <p>
+          <form>
+            <label for="fname">username</label>
+            <input type="text" id="fname" name="username" placeholder="username">
+          <form>
+          </p>
+          
+          <p>
+          <form>
+            <label for="fname">password</label>
+            <input type="text" id="fname" name="password" placeholder="password">
+          <form>
+          </p>
+
+          <button type="loginButton" onclick="logFunction()">login</button>
+
+        <script>
+            function logFunction() {
+                alert("users have not been implemented yet");
+            }
+        </script>
+        </div>
+    </body>
+</html>
