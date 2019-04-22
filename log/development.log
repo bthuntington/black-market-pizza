@@ -1764,3 +1764,115 @@ Processing by PagesController#login as HTML
 Completed 200 OK in 357ms (Views: 347.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-04-22 11:57:53 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/max/.gem/ruby/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/max/.gem/ruby/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for ::1 at 2019-04-22 11:57:57 -0700
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (196.2ms)
+Completed 200 OK in 219ms (Views: 218.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome?search=hello" for ::1 at 2019-04-22 11:58:04 -0700
+Processing by PagesController#home as HTML
+  Parameters: {"search"=>"hello"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome?search=hello" for ::1 at 2019-04-22 11:58:08 -0700
+Processing by PagesController#home as HTML
+  Parameters: {"search"=>"hello"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Desktop/black-market-pizza/app/views/pages/login.html.erb" for ::1 at 2019-04-22 11:58:08 -0700
+Processing by PagesController#login as HTML
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Desktop/black-market-pizza/app/views/pages/login.html.erb?username=max&password=[FILTERED]" for ::1 at 2019-04-22 11:58:18 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"max", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Desktop/black-market-pizza/app/views/pages/login.html.erb" for ::1 at 2019-04-22 12:02:09 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by PagesController#login as HTML
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (170.5ms)
+Completed 200 OK in 195ms (Views: 191.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Desktop/black-market-pizza/app/views/pages/login.html.erb?username=test&password=[FILTERED]" for ::1 at 2019-04-22 12:02:19 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome?search=pizza" for ::1 at 2019-04-22 12:02:32 -0700
+Processing by PagesController#home as HTML
+  Parameters: {"search"=>"pizza"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-22 12:06:42 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/max/.gem/ruby/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/max/.gem/ruby/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for ::1 at 2019-04-22 12:06:47 -0700
+Processing by PagesController#login as HTML
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (103.2ms)
+Completed 200 OK in 136ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test" for ::1 at 2019-04-22 12:06:52 -0700
+Processing by PagesController#test as HTML
+  Rendering pages/test.html.erb within layouts/application
+  Rendered pages/test.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome?username=&password=" for ::1 at 2019-04-22 12:07:08 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-22 12:11:22 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by PagesController#login as HTML
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (133.5ms)
+Completed 200 OK in 148ms (Views: 144.1ms | ActiveRecord: 0.0ms)
+
+
