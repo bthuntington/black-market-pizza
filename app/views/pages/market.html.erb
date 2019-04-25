@@ -3,6 +3,8 @@
 <html>
     <head>
         <style>
+
+        
             table{
                 border-collapse: collapse;
                 border: 1px solid black;  
@@ -41,18 +43,20 @@
                 transform: translate(-50%, -50%);
             
             }    
-        
-            .text-box {
-                font-family: relative;
+            
+            button.checkoutButton{
                 position: absolute;
                 margin: auto;
-                top: 50%;
+                top: 80%;
                 left: 50%;
-                background-color: white;
-                color: white;
-                padding: 20px;
+                font-size: 150%;
+                font-weight: bold;
+                background-color: gold;
+                color: black;
+                padding: 10px;
                 transform: translate(-50%, -50%);
             }
+            
         </style>
     </head>
 
@@ -63,10 +67,8 @@
             }
         </style>
            <div class = "title-box">
-                <p>Black Market Pizza</p>
+                <p>The Black Olive</p>
            </div>
-           <div class = text-box">
-           <p>
            <table class = "a">
            <tr>
             <th></th>
@@ -86,7 +88,9 @@
             </td>
             <td>$10.00</td>
             <td>cheese</td>
-            <td>pic</td>
+            <td>
+            pic
+            </td>
            </tr> 
            <tr>
             <td>          
@@ -99,7 +103,7 @@
             </script>
             </td>
             <td>$11.00</td>
-            <td>peparoni</td>
+            <td>pepperoni</td>
             <td>pic</td>
            </tr>  
            <tr>
@@ -117,8 +121,13 @@
             <td>pic</td>
            </tr>
            </table>  
-           </p>
-           </div>     
+           
+           <button class = "checkoutButton" type="checkoutButton" onclick="checkoutFunction()">checkout</button>
+              <script>
+                function checkoutFunction() {
+                    alert("congratulations");
+                }
+            </script>
             
     </body>
 </html>
