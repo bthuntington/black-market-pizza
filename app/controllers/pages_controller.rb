@@ -3,4 +3,10 @@ class PagesController < ApplicationController
     end
     def market
     end
+    def show
+        @user = User.first
+    end
+    def create_user
+    end
+    
 end

@@ -3395,3 +3395,698 @@ Migrating to CreateProducts (20190429223906)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/?username=&password=" for ::1 at 2019-04-29 15:51:35 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (320.5ms)
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
+    74:         <button onclick="location.href='welcome/user'" type="button"> Create User</button>
+    75:         </div>
+    76:     </body>
+    77:     <%= @user.user_id %>
+    78: </html>
+  
+app/views/pages/login.html.erb:77:in `_app_views_pages_login_html_erb__1098550431702655735_70301741038240'
+Started GET "/?username=&password=" for ::1 at 2019-04-29 15:51:53 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `userId' for nil:NilClass):
+    74:         <button onclick="location.href='welcome/user'" type="button"> Create User</button>
+    75:         </div>
+    76:     </body>
+    77:     <%= @user.userId %>
+    78: </html>
+  
+app/views/pages/login.html.erb:77:in `_app_views_pages_login_html_erb__1098550431702655735_70301903822560'
+Started GET "/?username=&password=" for ::1 at 2019-04-29 15:51:55 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `userId' for nil:NilClass):
+    74:         <button onclick="location.href='welcome/user'" type="button"> Create User</button>
+    75:         </div>
+    76:     </body>
+    77:     <%= @user.userId %>
+    78: </html>
+  
+app/views/pages/login.html.erb:77:in `_app_views_pages_login_html_erb__1098550431702655735_70301870247060'
+Started GET "/?username=&password=" for ::1 at 2019-04-29 15:52:18 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `userId' for nil:NilClass):
+    74:         <button onclick="location.href='welcome/user'" type="button"> Create User</button>
+    75:         </div>
+    76:     </body>
+    77:     <%= @users.userId %>
+    78: </html>
+  
+app/views/pages/login.html.erb:77:in `_app_views_pages_login_html_erb__1098550431702655735_70301906935640'
+Started GET "/?username=&password=" for ::1 at 2019-04-29 15:54:24 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `userId' for nil:NilClass):
+    74:         <button onclick="location.href='welcome/user'" type="button"> Create User</button>
+    75:         </div>
+    76:     </body>
+    77:     <%= @users.userId %>
+    78: </html>
+  
+app/views/pages/login.html.erb:77:in `_app_views_pages_login_html_erb__1098550431702655735_70301907387780'
+Started GET "/?username=&password=" for ::1 at 2019-04-29 15:54:56 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/login.html.erb:77
+  Rendered pages/login.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?username=&password=" for ::1 at 2019-04-29 15:55:21 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/login.html.erb:77
+  Rendered pages/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?username=&password=" for ::1 at 2019-04-29 16:00:47 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/login.html.erb:77
+  Rendered pages/login.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:00:48 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for(@user) do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.text_field :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2596543214142628521_70301908680340'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:04:45 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for(@user) do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.text_field :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___3677781832262469942_69972840522880'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/max/.rbenv/versions/2.6.2/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/bin/rake:23
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:05:07 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for(@user) do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.text_field :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2931405688857352011_69869660702300'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:06:25 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for(@user) do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.text_field :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2931405688857352011_69869661982800'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:08:43 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (120.4ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f39709b0978>:0x00007f39709ba478>):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for User.new do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2362244862983081390_69942339537680'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:10:33 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (128.9ms)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f397148ce78>:0x000055b0c46bc090>):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for User.new do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2362244862983081390_69942345231080'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:11:21 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (117.8ms)
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f3970ba5620>:0x00007f3970bbfc28>):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for User.new do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2362244862983081390_69942340562620'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:13:39 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (125.8ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f39705a7ac0>:0x00007f39705a4f28>):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for User.new do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2362244862983081390_69942337372900'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:14:00 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for(@user) do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2362244862983081390_69942342239700'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:18:23 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for(@user) do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2362244862983081390_69942339257440'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:19:55 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for(@user) do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2362244862983081390_69942336888300'
+Started GET "/welcome/user" for ::1 at 2019-04-29 16:26:21 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for(@user) do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2362244862983081390_69942337239960'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:39:27 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2188571192823671671_69843555258980'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:39:31 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___2188571192823671671_69843556547680'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:39:50 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___229762263104688223_70037365750560'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:39:51 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___229762263104688223_47152833868800'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:41:17 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___229762263104688223_70037365085260'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:41:18 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___229762263104688223_70037366937880'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:41:28 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___229762263104688223_70037365280240'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:41:29 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___229762263104688223_47152840855380'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:41:58 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___229762263104688223_70037366554660'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:42:48 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___1342713961580203062_69995456160460'
+Started GET "/?username=&password=" for 127.0.0.1 at 2019-04-29 16:42:50 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/login.html.erb:77
+  Rendered pages/login.html.erb within layouts/application (266.9ms)
+Completed 200 OK in 298ms (Views: 296.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/Desktop/black-market-pizza/app/views/pages/market.html.erb" for 127.0.0.1 at 2019-04-29 16:42:52 -0700
+Processing by PagesController#market as HTML
+  Rendering pages/market.html.erb within layouts/application
+  Rendered pages/market.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:42:55 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___1342713961580203062_69995417745060'
+Started GET "/?username=&password=" for 127.0.0.1 at 2019-04-29 16:45:30 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/login.html.erb:77
+  Rendered pages/login.html.erb within layouts/application (196.8ms)
+Completed 200 OK in 225ms (Views: 220.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:45:32 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___3557331302077971637_70029354713180'
+Started GET "/?username=&password=" for 127.0.0.1 at 2019-04-29 16:48:14 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/login.html.erb:77
+  Rendered pages/login.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:48:15 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___3557331302077971637_70029349317020'
+Started GET "/?username=&password=" for 127.0.0.1 at 2019-04-29 16:51:36 -0700
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/login.html.erb:77
+  Rendered pages/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:51:38 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___3557331302077971637_70029359344180'
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 16:52:21 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    22: 
+    23: <div class="row">
+    24:   <div class="col-md-6 col-md-offset-3">
+    25:     <%= form_for @user do |f| %>
+    26:       <%= f.label :name %>
+    27:       <%= f.name :name %>
+    28: 
+  
+app/views/pages/create_user.html.erb:25:in `_app_views_pages_create_user_html_erb___3557331302077971637_70029352188600'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/?username=&password=" for 127.0.0.1 at 2019-04-29 17:02:49 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/max/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendering pages/login.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/login.html.erb:77
+  Rendered pages/login.html.erb within layouts/application (239.6ms)
+Completed 200 OK in 277ms (Views: 268.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/welcome/user" for 127.0.0.1 at 2019-04-29 17:02:51 -0700
+Processing by PagesController#create_user as HTML
+  Rendering pages/create_user.html.erb within layouts/application
+  Rendered pages/create_user.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+

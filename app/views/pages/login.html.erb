@@ -74,4 +74,7 @@
         <button onclick="location.href='welcome/user'" type="button"> Create User</button>
         </div>
     </body>
+    <% User.all.each do |user| %>
+     <%= user.name %>
+    <% end %>
 </html>

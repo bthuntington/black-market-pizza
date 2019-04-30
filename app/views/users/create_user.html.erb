@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+   <h1>Create User</h1>
+   <br>
+   <h3> Username:</h3> 
+   <form>
+      <input type="text" id="username" name="username">
+   <h3> Balance: </h3>
+      <input type="text" id="balance" name="balance">
+   <h3> Name: </h3>
+<input type="text" id="name" name="name">
+<br>
+<br>
+<button> Create</button>
+</form>
+   
+</html>
+
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @user do |f| %>
+      <%= f.label :name %>
+      <%= f.name :name %>
+
+      <%= f.label :password %>
+      <%= f.password :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password :password_confirmation %>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
