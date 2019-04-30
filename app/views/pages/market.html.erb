@@ -72,9 +72,10 @@
            <table class = "a">
            <tr>
             <th></th>
+            <th>name</th>
             <th>price</th>
-            <th>title</th>
            </tr>
+           <% Product.all.each do |product| %>
            <tr>
             <td>          
             <button type="purchaseButton" onclick="purchaseFunction()">purchase</button>
@@ -85,35 +86,10 @@
                 }
             </script>
             </td>
-            <td>$10.00</td>
-            <td>cheese</td>
+            <td><%= product.name %></td>
+            <td><%= product.cost %></td>
            </tr> 
-           <tr>
-            <td>          
-            <button type="purchaseButton" onclick="purchaseFunction()">purchase</button>
-
-            <script>
-                function purchaseFunction() {
-                    alert("checkout has not been implemented yet");
-                }
-            </script>
-            </td>
-            <td>$11.00</td>
-            <td>pepperoni</td>
-           </tr>  
-           <tr>
-            <td>          
-            <button type="purchaseButton" onclick="purchaseFunction()">purchase</button>
-
-            <script>
-                function purchaseFunction() {
-                    alert("checkout has not been implemented yet");
-                }
-            </script>
-            </td>
-            <td>$8.00</td>
-            <td>bread sticks</td>
-           </tr>
+           <% end %>
            </table>  
            
            <button class = "checkoutButton" type="checkoutButton" onclick="checkoutFunction()">checkout</button>
