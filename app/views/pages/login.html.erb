@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
 <html>
     <head>
@@ -34,37 +34,32 @@
     </head>
 
     <body>
-        <style>
+    
+      <style>
             body {
                 background-image: url(<%= asset_path "login.png" %>);
                 background-repeat: no-repeat;
-                background-size: auto;         
+                background-size: auto;        
             }
-        </style>
+        </style> 
            <div class = "title-box">
                 <p>The Black Olive</p>
            </div>
         <div class= "text-box">
             
-          <p>
-          <form>
-            <label for="fname">username</label>
-            <input type="text" id="fname" name="username" placeholder="username">
-          <form>
-          </p>
-          
-          <p>
-          <form>
-            <label for="fname">password</label>
-            <input type="password" id="fname" name="password" placeholder="password">
-          <form>
-          </p>
 
-		  <a href="/Desktop/black-market-pizza/app/views/pages/market.html.erb">
-            <button type = "button" >login</button>
-          </a>
- 
+
           
+     <%= form_for(:session, url: "/login") do |f| %>
+
+      <%= f.label :username %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+    <% end %>
 
         <button onclick="location.href='welcome/user'" type="button"> Create User</button>
         </div>
