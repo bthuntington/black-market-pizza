@@ -9506,3 +9506,31 @@ Processing by SessionsController#create as HTML
 Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for ::1 at 2019-05-02 00:14:31 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by PagesController#login as HTML
+  Rendering pages/login.html.erb within layouts/application
+  Rendered pages/login.html.erb within layouts/application (132.2ms)
+Completed 200 OK in 151ms (Views: 147.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-05-02 00:14:36 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iFambnLcv3BlmqCfGYBqug58gVgbJL7F6xlo+fHoW+tVahN2X0dlCMPDz7hkAnnq/iJ0VwyoiTsvxk2PzRBNCw==", "session"=>{"name"=>"max", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."password" = ? LIMIT ?[0m  [["name", "max"], ["password", "12345"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:11
+  Rendering sessions/market.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/sessions/market.html.erb:79
+  Rendered sessions/market.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 24ms (Views: 15.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/welcome/user" for ::1 at 2019-05-02 00:14:46 -0700
+Processing by UsersController#create_user as HTML
+  Rendering users/create_user.html.erb within layouts/application
+  Rendered users/create_user.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
