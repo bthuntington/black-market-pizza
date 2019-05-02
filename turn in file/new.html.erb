@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            .title-box{
+                font-family: relative;
+                position: absolute;
+                margin: auto;
+                top: 10%;
+                left: 50%;
+                font-size: 150%;
+                font-weight: bold;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                transform: translate(-50%, -50%);
+            
+            }    
+        
+            .text-box {
+                font-family: relative;
+                position: absolute;
+                margin: auto;
+                top: 50%;
+                left: 50%;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <style>
+            body {
+                background-image: url(<%= asset_path "login.png" %>);
+                background-repeat: no-repeat;
+                background-size: auto;        
+            }
+        </style> 
+            <div class = "title-box">
+                <p>The Black Olive</p>
+            </div>
+            <div class= "text-box">
+                <p>Invalid login!</p>
+                <button onclick="location.href='/'" type="button">Try again</button>
+            </div>
+    </body>
+
+</html>

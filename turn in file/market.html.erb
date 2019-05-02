@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+
+        
+            table{
+                border-collapse: collapse;
+                border: 1px solid black;  
+                font-family: relative;
+                position: absolute;
+                margin: auto;
+                top: 50%;
+                left: 50%;
+                background-color: white;
+                color: black;
+                padding: 20px;
+                transform: translate(-50%, -50%);
+                
+            }
+            
+            table.a {
+                table-layout: fixed;
+                width: 100%;  
+            }
+            
+            th,td {
+                border: 1px solid black;
+            }
+       
+            .title-box{
+                font-family: relative;
+                position: absolute;
+                margin: auto;
+                top: 10%;
+                left: 50%;
+                font-size: 150%;
+                font-weight: bold;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                transform: translate(-50%, -50%);
+            
+            }    
+            
+            button.checkoutButton{
+                position: absolute;
+                margin: auto;
+                top: 80%;
+                left: 50%;
+                font-size: 150%;
+                font-weight: bold;
+                background-color: gold;
+                color: black;
+                padding: 10px;
+                transform: translate(-50%, -50%);
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <style>
+            body {
+                background-color: brown;     
+            }
+        </style>  
+        
+           <div class = "title-box">
+                <p>The Black Olive</p>
+           </div>
+           <table class = "a">
+           <tr>
+            <th></th>
+            <th>name</th>
+            <th>price</th>
+           </tr>
+           <% Product.all.each do |product| %>
+           <tr>
+            <td>          
+            <button type="purchaseButton" onclick="purchaseFunction()">purchase</button>
+
+            <script>
+                function purchaseFunction() {
+                    alert("checkout has not been implemented yet");
+                }
+            </script>
+            </td>
+            <td><%= product.name %></td>
+            <td>$<%= product.cost %>.00</td>
+           </tr> 
+           <% end %>
+           </table>  
+           
+           <button class = "checkoutButton" type="checkoutButton" onclick="checkoutFunction()">checkout</button>
+              <script>
+                function checkoutFunction() {
+                    alert("thank you for shopping");
+                }
+            </script>
+            
+    </body>
+</html>
